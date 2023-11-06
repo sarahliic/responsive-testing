@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+/* Header Section Style */
+.header {
+  background-color: #55176e;
+  color: #ffff;
+}
+.nvaBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  max-width: 12%;
+}
+.home {
+  font-size: 1.3rem;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+h3 {
+  color: #55176e;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+input {
+  width: 60%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #55176e;
+  outline: none;
+}
+/* Hero Section Style */
+.hero {
+  height: 50vh;
+  width: 100%;
+}
+.form-input {
+  display: grid;
+  text-align: center;
+  height: 20vh;
+}
+
+.devices {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #55176e;
+  text-align: center;
+  height: 50vh;
+}
+.devices img {
+  width: 30%;
+}
+.box {
+  background-color: #ffff;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  height: 37vh;
+  margin: 1rem;
+  line-height: 2;
+}
+
+.devices button {
+  background-color: #ffff;
+  border: 1px solid #55176e;
+  color: #55176e;
+  border-radius: 10%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.devices button:hover {
+  background-color: #55176e;
+  color: #ffff;
+}
+
+/* Footer Section Style */
+.footer {
+  margin-top: 5rem;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #55176e;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.footer p {
+  text-align: center;
+}
+
+/* BreakPoints */
+@media (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .nvaBar {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .logo {
+    max-width: 50%;
+    margin-bottom: 1rem;
+  }
+  .home {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .hero {
+    height: auto;
+    padding: 2rem;
+  }
+  .form-input {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .devices {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 2rem;
+  }
+  .devices img {
+    width: 50%;
+  }
+  .box {
+    height: auto;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .footer {
+    position: relative;
+    margin-top: 2rem;
+    height: auto;
+  }
+}
+
+/* CSS for medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    padding: 1rem;
+  }
+  .nvaBar {
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .logo {
+    max-width: 30%;
+  }
+  .home {
+    font-size: 1.3rem;
+  }
+  .hero {
+    height: auto;
+    padding: 2rem;
+  }
+  .form-input {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .devices {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    padding: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .devices img {
+    width: 30%;
+  }
+  .box {
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .footer {
+    position: relative;
+    margin-top: 2rem;
+    height: auto;
+  }
+}
